@@ -1,2 +1,4 @@
 %html
-  test.machine.com
+  %ul
+    - @nodes.each do |n|
+      %li= n[:name]

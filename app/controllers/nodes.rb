@@ -1,5 +1,6 @@
 Puppeteer.controllers :nodes do
   get :index do
+    @nodes = Node.all
     render 'nodes/index'
   end
 
